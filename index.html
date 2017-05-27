@@ -16,6 +16,7 @@
 
   <!-- Custom CSS -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,17 +28,18 @@
 </head>
 
 <body>
-
+<!--   <a href="#menu-toggle" id="menu-toggle">
+ -->  <div id="nav-icon" class="menu-toggle open">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- </a> -->
   <div id="wrapper" class="toggled">
-
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#">
-                    Start Bootstrap
-                </a>
-            </li>
             <li>
                 <a href="#">Dashboard</a>
             </li>
@@ -67,12 +69,15 @@
     <div id="page-content-wrapper">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-12">
-            <h1>Simple Sidebar</h1>
-            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+          <div class="col-sm-12">
+            <h1>SpinozApp</h1>
+            <p>This app will provide guidance for managing the passions in order to
+            improve our wisdom.</p>
             <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
           </div>
+          <div class="col-sm-4">Weaken</div>
+          <div class="col-sm-4">Resolve</div>
+          <div class="col-sm-4">Reference</div>
         </div>
       </div>
     </div>
@@ -82,6 +87,7 @@
   <!-- /#wrapper -->
   <!-- Vue -->
   <script src="https://unpkg.com/vue"></script>
+  <script src="js/vue.js"></script>
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
@@ -91,10 +97,19 @@
 
   <!-- Menu Toggle Script -->
   <script>
-  $("#menu-toggle").click(function(e) {
+  $(".menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
   });
+  </script>
+
+  <!-- Icon Script -->
+  <script>
+    $(document).ready(function(){
+      $('#nav-icon').click(function(){
+        $(this).toggleClass('open');
+      });
+    });
   </script>
 
 </body>

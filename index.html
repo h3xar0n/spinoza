@@ -28,40 +28,25 @@
 </head>
 
 <body>
-<!--   <a href="#menu-toggle" id="menu-toggle">
- -->  <div id="nav-icon" class="menu-toggle open">
+  <!-- Toggle Menu -->
+  <div id="nav-icon" class="menu-toggle open">
     <span></span>
     <span></span>
     <span></span>
     <span></span>
   </div>
-  <!-- </a> -->
+
+  <!-- Wrapper -->
   <div id="wrapper" class="toggled">
+
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li>
-                <a href="#">Dashboard</a>
-            </li>
-            <li>
-                <a href="#">Shortcuts</a>
-            </li>
-            <li>
-                <a href="#">Overview</a>
-            </li>
-            <li>
-                <a href="#">Events</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
+      <!-- Vue Menu -->
+      <ul id="emotions-index">
+        <li v-for="emotion in emotions" class="menu-item">
+          <a v-bind:id="emotion.index">{{ emotion.name }}</a>
+        </li>
+      </ul>
     </div>
     <!-- /#sidebar-wrapper -->
 
@@ -70,21 +55,32 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12">
-            <h1>SpinozApp</h1>
+            <h1 id="focus-title">SpinozApp</h1>
             <p>This app will provide guidance for managing the passions in order to
             improve our wisdom.</p>
             <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
           </div>
-          <div class="col-sm-4">Weaken</div>
-          <div class="col-sm-4">Resolve</div>
-          <div class="col-sm-4">Reference</div>
+          <div class="col-sm-4">
+            <h3>Weaken</h3>
+          </div>
+          <div class="col-sm-4">
+            <h3>Resolve</h3>
+          </div>
+          <div class="col-sm-4">
+            <h3>Reference</h3>
+          </div>
         </div>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
 
+  </div><!-- /#wrapper -->
+
+  <div id="test">
+
   </div>
-  <!-- /#wrapper -->
+
+
   <!-- Vue -->
   <script src="https://unpkg.com/vue"></script>
   <script src="js/vue.js"></script>
@@ -109,6 +105,12 @@
       $('#nav-icon').click(function(){
         $(this).toggleClass('open');
       });
+      $('.menu-item a').on('click', function(){
+        var indexId = $(this).attr('id');
+        console.log(indexId);
+        var title = $(this).html();
+        $('#focus-title').html(title);
+      })
     });
   </script>
 

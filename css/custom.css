@@ -1,3 +1,5 @@
+/*Universal*/
+
 /*Hamburger Menu Icon*/
 
 #nav-icon {
@@ -71,4 +73,29 @@
   top: 10px;
   width: 0%;
   left: 50%;
+}
+
+/*Sidebar Menu*/
+
+#example-1 {
+  padding-left: 10px;
+} 
+
+.menu-item {
+  padding-top: 10px;
+  list-style: none; 
+}
+
+.menu-item a {
+  color: white;
+}
+
+/*Main Area*/
+
+h1 {
+  margin-top: 0;
+}
+
+#page-content-wrapper {
+  padding-top: 5px;
 }

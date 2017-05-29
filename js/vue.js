@@ -11,7 +11,29 @@ var emotions = [{ name: 'Desire',
                   link: '/glossary',
                   index: 4 }]
 
+var i = 0;
+
 var example = new Vue({
   el: '#emotions-index',
-  data: { emotions }
+  data: { i, emotions }
 })
+
+var chosen = new Vue({
+  el: '#chosen',
+  data: { i, emotions }
+})
+
+const User = {
+  template: 
+    `<h1> {{ $route.params.id }} </h1>`
+}
+
+const router = new VueRouter({
+  routes: [
+    { path: '/emotion/:id', 
+      component: User 
+    }
+  ]
+})
+
+const app = new Vue({ router }).$mount('#app')

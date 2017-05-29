@@ -28,62 +28,59 @@
 </head>
 
 <body>
-  <!-- Toggle Menu -->
-  <div id="nav-icon" class="menu-toggle open">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <!-- Wrapper -->
-  <div id="wrapper" class="toggled">
-
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-      <!-- Vue Menu -->
-      <ul id="emotions-index">
-        <li v-for="emotion in emotions" class="menu-item">
-          <a v-bind:id="emotion.index">{{ emotion.name }}</a>
-        </li>
-      </ul>
-    </div>
-    <!-- /#sidebar-wrapper -->
-
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <h1 id="focus-title">SpinozApp</h1>
-            <p>This app will provide guidance for managing the passions in order to
-            improve our wisdom.</p>
-            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Weaken</h3>
-          </div>
-          <div class="col-sm-4">
-            <h3>Resolve</h3>
-          </div>
-          <div class="col-sm-4">
-            <h3>Reference</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /#page-content-wrapper -->
-
-  </div><!-- /#wrapper -->
-
-  <div id="test">
-
-  </div>
-
 
   <!-- Vue -->
   <script src="https://unpkg.com/vue"></script>
-  <script src="js/vue.js"></script>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+  <div id="app">
+    <!-- Toggle Menu -->
+    <div id="nav-icon" class="menu-toggle open">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="toggled">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <!-- Vue Menu -->
+        <ul>
+          <li><router-link to="/emotion/desire">Desire</router-link></li>
+          <li><router-link to="/emotion/joy">Joy</router-link></li>     
+
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 id="focus-title">SpinozApp</h1>
+              <router-view></router-view>
+            </div>
+            <div class="col-sm-4">
+              <h3>Weaken</h3>
+            </div>
+            <div class="col-sm-4">
+              <h3>Resolve</h3>
+            </div>
+            <div class="col-sm-4">
+              <h3>Reference</h3>
+            </div>
+            <div class="col-sm-12" id="chosen">
+              {{ emotions[i].name }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div><!-- /#wrapper -->
+  </div>
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
@@ -106,13 +103,15 @@
         $(this).toggleClass('open');
       });
       $('.menu-item a').on('click', function(){
-        var indexId = $(this).attr('id');
-        console.log(indexId);
+        i = $(this).attr('id');
+        console.log(i);
         var title = $(this).html();
         $('#focus-title').html(title);
-      })
+      });
     });
   </script>
+
+  <script src="js/vue.js"></script>
 
 </body>
 

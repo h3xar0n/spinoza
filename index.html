@@ -15,6 +15,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
   <link href="css/simple-sidebar.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
 
@@ -24,34 +25,34 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-
 </head>
 
 <body>
-
   <!-- Vue -->
   <script src="https://unpkg.com/vue"></script>
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
   <div id="app">
-    <!-- Toggle Menu -->
-    <div id="nav-icon" class="menu-toggle open">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+    <!-- Top Menu -->
+    <div class="top">
+      <div id="nav-icon" class="menu-toggle open">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <img src="images/spinoza-profile.png">
+      <h1>SpinozApp</h1>
     </div>
 
     <!-- Wrapper -->
     <div id="wrapper" class="toggled">
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
-        <!-- Vue Menu -->
+        <!-- Menu -->
         <ul>
-          <li><router-link to="/emotion/desire">Desire</router-link></li>
-          <li><router-link to="/emotion/joy">Joy</router-link></li>     
-
+          <li class="menu-item"></li>   
         </ul>
       </div>
       <!-- /#sidebar-wrapper -->
@@ -60,20 +61,34 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-12">
-              <h1 id="focus-title">SpinozApp</h1>
-              <router-view></router-view>
+              <h2>Main</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="col-sm-4">
               <h3>Weaken</h3>
+              <ul>
+                <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+                <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer
+                ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+              </ul>
             </div>
             <div class="col-sm-4">
               <h3>Resolve</h3>
+              <ul>
+                <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+                <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+              </ul>
             </div>
             <div class="col-sm-4">
               <h3>Reference</h3>
-            </div>
-            <div class="col-sm-12" id="chosen">
-              {{ emotions[i].name }}
+              <ul>
+                <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer
+                ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+                <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -112,7 +127,6 @@
   </script>
 
   <script src="js/vue.js"></script>
-
 </body>
 
 </html>

@@ -10,6 +10,7 @@
 body {
   font-family: 'Agane-45', sans-serif;
   color: #1c252b;
+  background-color: #f6f4ef;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,5 +140,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #page-content-wrapper {
   padding-top: 5px;
-  background-color: #f6f4ef;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
 }

@@ -53,10 +53,7 @@
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
         <!-- Menu -->
-        <ul id="menu">
-          <li class="menu-item" @click="changeId">Test</li>   
-          <li class="menu-item">Test</li>
-          <li class="menu-item">Test</li>   
+        <ul id="menu"> 
           <li class="menu-item" v-for="content in contents"><a @click="onChange(content)">
             {{ content.title }}</a></li>
         </ul>
@@ -68,7 +65,7 @@
           <transition name="fade">
             <div class="row" class="content-area" id="content">
               <div class="col-sm-12">
-                <h2>{{ title }} <i>{{ subtitle }}</i></h2>
+                <h2>{{ title }} - <i>{{ subtitle }}</i></h2>
                 <p v-for="description in descriptions">{{ description }}</p>
               </div>
               <div class="col-sm-4">

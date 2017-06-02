@@ -106,6 +106,30 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
 
+  <script type="text/javascript">
+    // jQuery for Menu
+
+    $(document).ready(function(){
+
+      // Menu Toggle
+      $(".menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+
+      // Icon Toggle
+      $('#nav-icon').click(function(){
+        $(this).toggleClass('open');
+      });
+      $('.menu-item a').on('click', function(){
+        i = $(this).attr('id');
+        console.log(i);
+        var title = $(this).html();
+        $('#focus-title').html(title);
+      });
+
+    });
+  </script>
 </body>
 
 </html>

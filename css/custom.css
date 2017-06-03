@@ -5,6 +5,11 @@
   src: url('agane/Aganè 45 (light).ttf');
 }
 
+@font-face {
+  font-family: 'Agane-65';
+  src: url('agane/Aganè 65 (Bold).ttf');
+}
+
 /*Hamburger Menu Icon*/
 
 body {
@@ -15,7 +20,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Philosopher', sans-serif;
+  font-family: 'Philosopher', 'Agane-65', sans-serif;
 }
 
 #nav-icon {
@@ -124,10 +129,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 10px;
   list-style: none; 
   color: white;
+
 }
 
 .menu-item a {
   color: white;
+  cursor: pointer;
 }
 
 /*Main Area*/

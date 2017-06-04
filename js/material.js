@@ -1,7 +1,7 @@
 var material = [
   { title: 'Desire', 
     subtitle: 'cupiditas',
-    descriptions: ['Desire is the essence of man insofar as it is conceived as determined to any action by any one of its modifications. [Desire is the expression of conatus in the psycho-physical organism as a whole; it includes both bodily appetite and consciousness of that appetite.', 
+    descriptions: ['Desire is the essence of man insofar as it is conceived as determined to any action by any one of its modifications. Desire is the expression of conatus in the psycho-physical organism as a whole; it includes both bodily appetite and consciousness of that appetite.', 
       'Sometimes people do things which conduce to their perseverance and other times people do things which fail to so conduce. In both types of case, though, people desire to persevere. When I do something that fails to help me to persevere, it is because the ideas on which I based my action were confused; that is, I thought I knew what would help me to persevere, but I was wrong. When I do something that does help me to persevere, though (unless I have simply been lucky in acting from an inadequate idea), it is because I acted on clear and distinct ideas or, in other words, genuine knowledge about what would help me to persevere.'],
     reflections: ['Desire is excessive when it prevents us from our power of thought.'],
     references: [

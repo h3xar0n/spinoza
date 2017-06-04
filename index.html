@@ -53,8 +53,13 @@
         <!-- Menu -->
         <br>
         <ul id="menu">
-          <li class="menu-item" v-for="content in contents"><a @click="onChange(content)">
-            {{ content.title }}</a></li>
+          <li 
+            class="menu-item" 
+            v-for="content in contents">
+            <a @click="onChange(content)">
+              {{ content.title }}
+            </a>
+          </li>
         </ul>
       </div>
       <!-- /#sidebar-wrapper -->

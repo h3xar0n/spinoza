@@ -15,9 +15,13 @@ var main = new Vue({
     title:       'Ethics',
     subtitle:    'an exposition of major concepts',
     descriptions: [
-      'I have gone through all the remedies against the emotions, or all that the mind, considered in itself alone, can do against them. Whence it appears that the mind\'s power over the emotions consists:—',
-      'I. In the actual knowledge of the emotions (V. iv note).',
-      'II. In the fact that it separates the emotions from the thought of an external cause, which we conceive confusedly (V. ii. and iv. note).',
+      // What does the app do?
+      'In Part V of Spinoza\'s Ethics, he describes the power of our minds to remedy the emotions.',
+      // What is the problem with emotions?
+      'This app begins with the first remedy, the actual knowledge of the emotions.',
+      // How is knowledge of an emotion a remedy?
+      'For more complex emotions such as pity and hatred, the app provides strategies from seperating the basic feeling from the confused idea of an external cause.',
+      // Reiterate how emotions are confused, and how if we were free, we would hardly choose to be sad
       'III. In the fact, that, in respect to time, the emotions referred to things, which we distinctly understand, surpass those referred to what we conceive in a confused and fragmentary manner (V. vii.).',
       'IV. In the number of causes whereby those modifications, are fostered, which have regard to the common properties of things or to God (V. ix. xi.).',
       'V. Lastly, in the order wherein the mind can arrange and associate, one with another, its own emotions (V. x. note and xii. xiii. xiv.).',

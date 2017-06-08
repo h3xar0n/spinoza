@@ -1,4 +1,5 @@
 var material = [
+  //Object names below
   { title: 'Desire', 
     subtitle: 'cupiditas',
     descriptions: ['Desire is the essence of man insofar as it is conceived as determined to any action by any one of its modifications. Desire is the expression of conatus in the psycho-physical organism as a whole; it includes both bodily appetite and consciousness of that appetite.', 

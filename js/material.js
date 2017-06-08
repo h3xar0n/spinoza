@@ -55,7 +55,8 @@ var material = [
   },
   { title: 'Sorrow',
     subtitle: 'tristitia',
-    descriptions: ['']
+    descriptions: [''],
+    reflections: ['']
   },
   { title: 'Hatred',
     subtitle: 'odium',

@@ -49,5 +49,3 @@ var main = new Vue({
     onChange
   }
 });
-
-

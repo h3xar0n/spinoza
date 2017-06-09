@@ -7,7 +7,8 @@ var material = [
     reflections: ['Desire is excessive when it prevents us from our power of thought.'],
     references: [
       { name: 'Test 1', link: 'www.google.com' },
-      { name: 'Test 2', link: 'www.gmail.com' }
+      { name: 'Test 2', link: 'www.gmail.com' },
+      { name: 'Aron Eidelman', link: 'www.eideldev.com'}
     ]   
   }, 
   { title: 'Joy',
@@ -17,7 +18,8 @@ var material = [
     reflections: ['Joy, considered by itself, is always good.'],
     references: [
       { name: 'Test 1', link: 'www.google.com' },
-      { name: 'Test 2', link: 'www.gmail.com' }
+      { name: 'Test 2', link: 'www.gmail.com' },
+      { name: 'Aron Eidelman', link: 'www.eideldev.com'}
     ] 
   },
   { title: 'Love',
